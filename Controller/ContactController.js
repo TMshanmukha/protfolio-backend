@@ -25,7 +25,7 @@ const sendMessage = async (req, res) => {
 
         const data = await resend.emails.send({
 
-            from: "shanmu547@gmail.com",
+            from: "onboarding@resend.dev",
 
             to: "shanmu547@gmail.com",
 
