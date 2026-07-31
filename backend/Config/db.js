@@ -1,8 +1,10 @@
 import { connect } from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
 
 const db = async () => {
     try{
-        await connect("mongodb://127.0.0.1:27017/portfolioDB")
+        await connect(process.env.MONGO_URL)
 
         console.log("MongoDB connected");
     }catch(err){
